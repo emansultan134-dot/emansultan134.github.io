@@ -141,7 +141,9 @@ const revealItems = document.querySelectorAll(".reveal");
 const dashboard = document.querySelector(".dashboard");
 
 function armDashboard() {
-  dashboard?.classList.add("is-live");
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => dashboard?.classList.add("is-live"));
+  });
 }
 
 if (prefersReduced || !("IntersectionObserver" in window)) {
