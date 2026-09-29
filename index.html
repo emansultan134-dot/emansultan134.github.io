@@ -22,7 +22,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <script type="application/ld+json">
   {
@@ -145,7 +145,7 @@
 
         <figure class="portrait">
           <div class="portrait-frame">
-            <img src="assets/eman-sultan.jpg" width="900" height="1200" alt="Portrait of Eman Sultan, SEO Specialist" />
+            <img src="assets/eman-portrait.jpg" width="900" height="1200" alt="Portrait of Eman Sultan, SEO Specialist, facing the camera in a rose hijab" />
           </div>
           <figcaption>Eman Sultan · SEO Specialist</figcaption>
         </figure>
@@ -193,6 +193,10 @@
 
     <section class="section section-alt reveal" id="about" tabindex="-1" aria-labelledby="about-title">
       <div class="container">
+        <div class="about-stage">
+          <figure class="about-photo">
+            <img src="assets/eman-profile.jpg" width="900" height="1200" alt="Eman Sultan in profile, wearing a floral hijab and black niqab" />
+          </figure>
         <div class="about-grid">
           <div class="about-copy">
             <p class="kicker"><span>01</span> About</p>
@@ -220,6 +224,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="expertise">
           <h3>Expertise</h3>
           <ul class="chip-list">
@@ -244,14 +249,17 @@
       </div>
     </section>
 
-    <section class="section reveal" id="services" tabindex="-1" aria-labelledby="services-title">
+    <section class="section section-ink reveal" id="services" tabindex="-1" aria-labelledby="services-title">
       <div class="container">
-        <div class="section-head">
-          <p class="kicker"><span>02</span> Services</p>
-          <div class="section-head-row">
+        <div class="section-head services-head">
+          <div>
+            <p class="kicker"><span>02</span> Services</p>
             <h2 id="services-title">What I Do</h2>
             <p class="dek">Search work planned around the business, the audience, and the way the website is built.</p>
           </div>
+          <figure class="section-photo">
+            <img src="assets/seo-desk.jpg" width="1200" height="675" alt="A warm desk with a notebook and a rising line, suggesting search growth" />
+          </figure>
         </div>
         <ul class="service-grid">
           <li class="service-card">
@@ -353,12 +361,15 @@
 
     <section class="section reveal" id="portfolio" tabindex="-1" aria-labelledby="portfolio-title">
       <div class="container">
-        <div class="section-head">
-          <p class="kicker"><span>04</span> Portfolio</p>
-          <div class="section-head-row">
+        <div class="section-head split-media">
+          <div>
+            <p class="kicker"><span>04</span> Portfolio</p>
             <h2 id="portfolio-title">Featured Projects</h2>
             <p class="dek">Highlighted SEO work, shown here apart from the full project list. Each card describes the scope of work. The wider body of work covers 25+ websites.</p>
           </div>
+          <figure class="section-photo frame-photo">
+            <img src="assets/local-map.jpg" width="900" height="675" alt="A folded map with a bronze pin, suggesting local search and service areas" />
+          </figure>
         </div>
         <div class="project-grid">
           <article class="project-card is-feature" data-tone="gold">
@@ -485,12 +496,16 @@
 
     <section class="section section-alt reveal" id="skills" tabindex="-1" aria-labelledby="skills-title">
       <div class="container">
+        <div class="skills-layout">
+          <figure class="section-photo tall-photo">
+            <img src="assets/content-pages.jpg" width="900" height="675" alt="Stacked cream pages tied with a ribbon, suggesting planned content" />
+            <figcaption>Content planned around search demand</figcaption>
+          </figure>
+          <div>
         <div class="section-head">
           <p class="kicker"><span>05</span> Skills</p>
-          <div class="section-head-row">
-            <h2 id="skills-title">Skills &amp; Tools</h2>
-            <p class="dek">The disciplines and tools used to research, structure, and maintain search visibility.</p>
-          </div>
+          <h2 id="skills-title">Skills &amp; Tools</h2>
+          <p class="dek">The disciplines and tools used to research, structure, and maintain search visibility.</p>
         </div>
         <div class="skill-grid">
           <article class="skill-card">
@@ -531,6 +546,8 @@
             </ul>
           </article>
         </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -568,26 +585,42 @@
       </div>
     </section>
 
-    <section class="section section-alt reveal" id="testimonials" tabindex="-1" aria-labelledby="testimonials-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="kicker"><span>07</span> Notes</p>
-          <div class="section-head-row">
-            <h2 id="testimonials-title">Testimonials</h2>
-            <p class="dek">A reserved space for client words. Feedback is added only when it comes from a client and they agree to be quoted.</p>
-          </div>
-        </div>
-        <!--
-          Replace this panel when a real testimonial is available:
-          <blockquote>
-            <p>Client quote.</p>
-            <footer><cite>Client name, Company</cite></footer>
-          </blockquote>
-        -->
-        <div class="quote-panel">
-          <p class="quote-mark" aria-hidden="true">&ldquo;</p>
-          <h3>Client notes will appear here</h3>
-          <p>This section is ready for a genuine quote, the client’s name, and their company. No sample reviews are shown in their place.</p>
+    <section class="section section-alt reveal" id="working" tabindex="-1" aria-labelledby="working-title">
+      <div class="container work-layout">
+        <blockquote class="work-quote">
+          <p>Search visibility starts with a clear page. I look at what people type, how the site is built, and whether the content actually answers them.</p>
+          <footer>
+            <cite>Eman Sultan</cite>
+            <span>SEO Specialist</span>
+          </footer>
+        </blockquote>
+        <div>
+          <p class="kicker"><span>07</span> Working</p>
+          <h2 id="working-title">How I Work</h2>
+          <p class="dek">The same sequence on every project: understand the business, shape the pages, then watch what search does next.</p>
+          <ol class="work-list">
+            <li class="work-card">
+              <span>01</span>
+              <div>
+                <h3>Start with the business</h3>
+                <p>Services, audience, and the questions people ask before they enquire.</p>
+              </div>
+            </li>
+            <li class="work-card">
+              <span>02</span>
+              <div>
+                <h3>Shape the pages</h3>
+                <p>Titles, structure, internal links, and content planned around that search intent.</p>
+              </div>
+            </li>
+            <li class="work-card">
+              <span>03</span>
+              <div>
+                <h3>Keep watching</h3>
+                <p>Indexing, visibility, and the next page that would help the site.</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
@@ -673,12 +706,18 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <p class="footer-name">Eman Sultan</p>
-          <p class="footer-role">SEO Specialist</p>
-          <p class="footer-desc">Strategic SEO for businesses ready to improve their search visibility.</p>
+      <div class="footer-panel">
+        <div class="footer-brand">
+          <img class="footer-avatar" src="assets/eman-portrait.jpg" width="72" height="72" alt="" />
+          <div>
+            <p class="footer-name">Eman Sultan</p>
+            <p class="footer-role">SEO Specialist</p>
+          </div>
         </div>
+        <p class="footer-desc">Strategic SEO for businesses ready to improve their search visibility.</p>
+        <a class="footer-mail" href="mailto:emansultan134@gmail.com">emansultan134@gmail.com</a>
+      </div>
+      <div class="footer-bar">
         <nav class="footer-nav" aria-label="Footer">
           <ul>
             <li><a href="#home">Home</a></li>
@@ -689,9 +728,8 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+        <p class="copyright">© 2026 Eman Sultan. All rights reserved.</p>
       </div>
-      <p class="footer-mark" aria-hidden="true">Eman Sultan</p>
-      <p class="copyright">© 2026 Eman Sultan. All rights reserved.</p>
     </div>
   </footer>
 

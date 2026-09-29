@@ -115,7 +115,7 @@ const sectionMap = [
   ["portfolio", "portfolio"],
   ["skills", "skills"],
   ["why", "skills"],
-  ["testimonials", "contact"],
+  ["working", "contact"],
   ["contact", "contact"]
 ];
 

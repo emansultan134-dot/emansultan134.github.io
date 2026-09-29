@@ -17,7 +17,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -47,11 +47,16 @@
 
   <main id="main" tabindex="-1">
     <section class="page-hero" aria-labelledby="projects-title">
-      <div class="container">
-        <p class="kicker">Project directory</p>
-        <h1 id="projects-title">All Projects</h1>
-        <p class="lede">Eman Sultan has done SEO work across 25+ websites. The names below are the projects currently written up on this site. Featured work is also highlighted on the homepage, separate from this full list.</p>
-        <p class="stat-line"><strong>25+</strong> <span>websites supported with SEO</span></p>
+      <div class="container hero-split">
+        <div>
+          <p class="kicker">Project directory</p>
+          <h1 id="projects-title">All Projects</h1>
+          <p class="lede">Eman Sultan has done SEO work across 25+ websites. The names below are the projects currently written up on this site. Featured work is also highlighted on the homepage, separate from this full list.</p>
+          <p class="stat-line"><strong>25+</strong> <span>websites supported with SEO</span></p>
+        </div>
+        <figure class="section-photo frame-photo">
+          <img src="assets/local-map.jpg" width="900" height="675" alt="A folded map with a bronze pin, suggesting local search coverage" />
+        </figure>
       </div>
     </section>
 
@@ -146,12 +151,18 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <p class="footer-name">Eman Sultan</p>
-          <p class="footer-role">SEO Specialist</p>
-          <p class="footer-desc">Strategic SEO for businesses ready to improve their search visibility.</p>
+      <div class="footer-panel">
+        <div class="footer-brand">
+          <img class="footer-avatar" src="assets/eman-portrait.jpg" width="72" height="72" alt="" />
+          <div>
+            <p class="footer-name">Eman Sultan</p>
+            <p class="footer-role">SEO Specialist</p>
+          </div>
         </div>
+        <p class="footer-desc">Strategic SEO for businesses ready to improve their search visibility.</p>
+        <a class="footer-mail" href="mailto:emansultan134@gmail.com">emansultan134@gmail.com</a>
+      </div>
+      <div class="footer-bar">
         <nav class="footer-nav" aria-label="Footer">
           <ul>
             <li><a href="index.html#home">Home</a></li>
@@ -162,9 +173,8 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+        <p class="copyright">© 2026 Eman Sultan. All rights reserved.</p>
       </div>
-      <p class="footer-mark" aria-hidden="true">Eman Sultan</p>
-      <p class="copyright">© 2026 Eman Sultan. All rights reserved.</p>
     </div>
   </footer>
 
