@@ -2085,6 +2085,14 @@ main { animation: pageIn 0.55s ease both; }
   font-size: 0.95rem;
 }
 
+.grow-cols a { color: #fffdf9; }
+
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
 .grow-cols li::before {
   content: "";
   position: absolute;

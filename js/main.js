@@ -11,6 +11,7 @@
  */
 const CONTACT = {
   email: "emansultan134@gmail.com",
+  whatsapp: "0349-4459497",
   linkedin: "",
   otherLabel: "",
   otherUrl: ""
@@ -268,6 +269,11 @@ function upgradeContactLink(slotName, href, text, labelText) {
 
 if (looksLikeEmail(CONTACT.email.trim())) {
   upgradeContactLink("email", `mailto:${CONTACT.email.trim()}`, CONTACT.email.trim());
+}
+if (CONTACT.whatsapp.trim()) {
+  const digits = CONTACT.whatsapp.replace(/\D/g, "");
+  const intl = digits.startsWith("0") ? `92${digits.slice(1)}` : digits;
+  upgradeContactLink("whatsapp", `https://wa.me/${intl}`, CONTACT.whatsapp.trim(), "WhatsApp");
 }
 if (CONTACT.linkedin.trim()) {
   upgradeContactLink("linkedin", normalizeUrl(CONTACT.linkedin.trim()), "Open profile");
