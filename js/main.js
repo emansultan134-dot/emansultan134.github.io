@@ -281,6 +281,10 @@ if (CONTACT.otherUrl.trim()) {
   );
 }
 
+document.querySelectorAll("[data-slot]").forEach((slot) => {
+  if (slot.querySelector(".contact-placeholder")) slot.hidden = true;
+});
+
 function setFieldError(field, message) {
   const error = document.getElementById(`${field.id}-error`);
   field.setAttribute("aria-invalid", message ? "true" : "false");
