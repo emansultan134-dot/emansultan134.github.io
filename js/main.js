@@ -11,7 +11,7 @@
  */
 const CONTACT = {
   email: "emansultan134@gmail.com",
-  whatsapp: "0349-4459497",
+  whatsapp: "0308-6878094",
   linkedin: "",
   otherLabel: "",
   otherUrl: ""

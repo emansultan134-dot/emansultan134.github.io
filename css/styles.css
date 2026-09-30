@@ -2299,10 +2299,16 @@ main { animation: pageIn 0.55s ease both; }
 }
 
 .wa-header svg,
-.wa-float svg {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
+.wa-float svg,
+.wa-tab svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  max-width: 16px;
+  min-height: 16px;
+  max-height: 16px;
+  flex: 0 0 16px;
 }
 
 .wa-header:hover,
@@ -2320,12 +2326,26 @@ main { animation: pageIn 0.55s ease both; }
   z-index: 55;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.78rem 1.05rem;
-  border-radius: 999px;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  max-width: 42px;
+  min-height: 42px;
+  max-height: 42px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 50%;
   text-decoration: none;
-  font-weight: 700;
-  box-shadow: 0 14px 32px rgba(16, 70, 36, 0.35);
+  box-shadow: 0 8px 18px rgba(16, 70, 36, 0.28);
+}
+
+.wa-float span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
 .reach {
@@ -2412,21 +2432,23 @@ main { animation: pageIn 0.55s ease both; }
   .nav-toggle { margin-left: auto; margin-right: 3.3rem; }
   .wa-tab {
     position: fixed;
-    top: 16px;
+    top: 18px;
     right: 12px;
     z-index: 60;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    max-width: 36px;
+    overflow: hidden;
     border-radius: 50%;
     background: #1f8a4c;
     color: #fff;
     text-decoration: none;
-    box-shadow: 0 8px 20px rgba(16, 70, 36, 0.35);
+    box-shadow: 0 6px 14px rgba(16, 70, 36, 0.28);
   }
-  .wa-tab svg { width: 22px; height: 22px; }
 }
 
 @media (max-width: 600px) {
